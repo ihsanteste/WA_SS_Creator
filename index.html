@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake WhatsApp Chat Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fake WhatsApp Chat Generator</h1>
+    <main role="main">
+        <div class="container">
+            <div class="editor">
+                <h2>Edit Options</h2>
+                <div>
+                    <label for="screenWidth">Screen Width:</label>
+                    <input type="number" id="screenWidth" value="1320">
+                </div>
+                <div>
+                    <label for="screenHeight">Screen Height:</label>
+                    <input type="number" id="screenHeight" value="2868">
+                </div>
+                <div>
+                    <label for="notification">Notification:</label>
+                    <input type="text" id="notification" placeholder="New message">
+                </div>
+                <div>
+                    <label for="contactName">Contact Name:</label>
+                    <input type="text" id="contactName" value="User">
+                </div>
+                <div>
+                    <label for="profilePhoto">Profile Photo URL:</label>
+                    <input type="text" id="profilePhoto" placeholder="Enter image URL" value="https://via.placeholder.com/150">
+                </div>
+                <h3>Messages</h3>
+                <div>
+                    <label for="sentMessage">Sent Message:</label>
+                    <input type="text" id="sentMessage" placeholder="Type sent message">
+                    <button id="addSentMessage">Add Sent Message</button>
+                </div>
+                <div>
+                    <label for="receivedMessage">Received Message:</label>
+                    <input type="text" id="receivedMessage" placeholder="Type received message">
+                    <button id="addReceivedMessage">Add Received Message</button>
+                </div>
+            </div>
+            <div class="preview" id="preview">
+                <div class="notification-bar" id="notificationBar">
+                    <span id="notificationText"></span>
+                    <span id="notificationTime"></span>
+                </div>
+                <div class="contact-info">
+                    <img id="profileImage" src="https://via.placeholder.com/150" alt="Profile Photo">
+                    <span id="contactDisplayName">User</span>
+                    <span id="statusText">Online</span>
+                </div>
+                <div class="messages-container" id="messagesContainer"></div>
+                <div class="typing-area">
+                    <input type="text" id="typingMessage" placeholder="Type a message...">
+                    <button id="sendMessage">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
